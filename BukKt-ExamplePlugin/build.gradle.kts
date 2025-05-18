@@ -15,10 +15,6 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
-
 tasks.register("deploy") {
     dependsOn("shadowJar")
 
@@ -29,6 +25,10 @@ tasks.register("deploy") {
             include("*-all.jar")
         }
     }
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 kotlin {
