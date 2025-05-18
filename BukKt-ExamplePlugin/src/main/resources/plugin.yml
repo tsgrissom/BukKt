@@ -1,0 +1,10 @@
+name: "BukKtExamplePlugin"
+version: "1.0.0"
+main: "io.github.tsgrissom.bukkt.plugin.BukKtExamplePlugin"
+api-version: "1.21.5"
+commands:
+  bukkt:
+    description: "Interact with the BukKt example plugin"
+permissions:
+  bukkt.command.bukkt:
+    description: "Access the /bukkt command"
